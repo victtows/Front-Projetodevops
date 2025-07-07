@@ -2,9 +2,13 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - deployment.yaml
-  - service.yaml
+- deployment.yaml
+- service.yaml
 
 namePrefix: frontend-
 commonLabels:
   app: frontend
+images:
+- name: hello-fastapi
+  newName: eduardosilvasc/hello-fastapi-k8s
+  newTag: 6dc593e35e6594aaa732e3214c64d49fa134f8dd

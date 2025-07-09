@@ -12,3 +12,6 @@ images:
 - name: frontend
   newName: victtows/front-projetodevops
   newTag: 0d07f3ad784187f54ab8b5498544d71e6de27457
+- name: hello-fastapi
+  newName: eduardosilvasc/hello-fastapi-k8s
+  newTag: 492d185ec7b064bebc30876ea9fcfbea1eec4dd9

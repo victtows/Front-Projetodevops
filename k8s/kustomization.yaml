@@ -9,12 +9,3 @@ namePrefix: frontend-
 commonLabels:
   app: frontend
 images:
-- name: Front-Projetodevops
-  newName: victtows/Frontend-devops-k8s
-  newTag: a959fa9b36a5fcb1aff0a310d525a4e148f77e60
-- name: frontend
-  newName: victtows/front-projetodevops
-  newTag: 0d07f3ad784187f54ab8b5498544d71e6de27457
-- name: frontend-projetodevops
-  newName: victtows/frontend-projetodevops-k8s
-  newTag: d6b9cbae84e006ac7b331aa5349b59f1ea5f6c19

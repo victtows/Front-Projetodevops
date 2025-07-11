@@ -18,7 +18,7 @@ spec:
         - name: frontend
           image: victtows/frontend-projetodevops:latest
           ports:
-            - containerPort: 80
+            - containerPort: 8000
           env:
             - name: API_BASE_URL
               value: "http://backend-service:3000"  # Nome do service do backend

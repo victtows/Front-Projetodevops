@@ -11,4 +11,4 @@ commonLabels:
 images:
 - name: Front-Projetodevops
   newName: victtows/Frontend-devops-k8s
-  newTag: 6418eca089060edac439d15e26f60e85d75c4880
+  newTag: eacf4917b07feb5f1f56d7b31940378218774507

@@ -27,7 +27,10 @@ cd Front-Projetodevops
 
 git clone https://github.com/victtows/Trabalho-final---Devops.git
 
-## Acessar 
+## Acessar pelo navegador
+
+**Importante:** faça os passos anteriores do repositorio acima se nao foi feito, ate chegar nessa parte 
+
 **Suba a máquina virtual (se não tiver feito esse passo antes):**
 ```bash 
 vagrant up

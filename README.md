@@ -8,20 +8,6 @@ Este repositório contém o frontend do projeto AnonyQuest, desenvolvido para a 
 
 ⚠️ Aviso: A integração completa entre frontend, backend e banco não foi finalizada. No entanto, o processo de criação da VM com Vagrant foi bem-sucedido.
 
-## 📁 Estrutura do Projeto
-```bash
-Front-Projetodevops/
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── App.jsx
-├── .gitignore
-├── package.json
-├── vite.config.js
-└── README.md
-```
-
 ## Clone o repositório
 
 git clone https://github.com/victtows/Front-Projetodevops.git

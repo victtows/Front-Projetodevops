@@ -65,6 +65,6 @@ http://<IP_DA_VM>:8000
 ## 👨‍💻 Autores
 
 @victtows – Frontend & Vagrant
-@FabioPYAug – Backend (FastAPI)
+@FabioPYAug – Backend (Laravel)
 @Otaviopax – Banco de Dados (MySQL)
 

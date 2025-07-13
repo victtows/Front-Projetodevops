@@ -1,13 +1,10 @@
 ## 🌐 Front-Projetodevops
 Este repositório contém o frontend do projeto AnonyQuest, desenvolvido para a disciplina de DevOps. O projeto é composto por três partes principais:
 
-Frontend (este repositório)
-
-Backend
-
-Banco de Dados
-
-Além disso, também foi utilizado o Vagrant para provisionamento automático de uma máquina virtual que simula o ambiente de produção.
+- 🎨 **Frontend (interface do usuário)** → [este repositório](https://github.com/victtows/Front-Projetodevops.git)
+- ⚙️ **Backend (Laravel)** → [AnonyQuest](https://github.com/FabioPYAug/AnonyQuest.git)
+- 🛢️ **Banco de Dados (MySQL)** → [MySQL-Projetodevops](https://github.com/Otaviopax/MySQL-Projetodevops.git)
+- 📦 **Provisionamento completo com Vagrant e Kubernetes** → [Trabalho-final---Devops](https://github.com/victtows/Trabalho-final---Devops.git)
 
 ⚠️ Aviso: A integração completa entre frontend, backend e banco não foi finalizada. No entanto, o processo de criação da VM com Vagrant foi bem-sucedido.
 
@@ -23,69 +20,45 @@ Front-Projetodevops/
 ├── package.json
 ├── vite.config.js
 └── README.md
-🚀 Como executar o frontend
-Pré-requisitos: Node.js, npm ou yarn
 ```
 
 ## Clone o repositório
+
 git clone https://github.com/victtows/Front-Projetodevops.git
+
 cd Front-Projetodevops
 
-## Instale as dependências
-npm install
-ou
-yarn install
-
-## Rode o projeto
-npm run dev
-ou
-yarn dev
-A aplicação estará disponível em http://localhost:5173 (ou porta configurada).
 
 ## 🖥️ Ambiente de Desenvolvimento com Vagrant
-O ambiente completo pode ser simulado com o repositório:
 
-🔗 Trabalho-final---Devops (Vagrant)
+**O ambiente completo pode ser simulado com o repositório:**
 
-Esse repositório configura uma máquina virtual pronta para rodar os serviços com:
+[Trabalho-final---Devops](https://github.com/victtows/Trabalho-final---Devops.git)
 
-Ubuntu
+*Esse repositório configura uma máquina virtual pronta para rodar o serviço*
 
-Node.js
-
-MySQL
-
-Nginx/Apache (dependendo da configuração)
-
-Para utilizar:
+**Para utilizar:**
 
 git clone https://github.com/victtows/Trabalho-final---Devops.git
-cd Trabalho-final---Devops
+
+**Suba a máquina virtual:**
+
 vagrant up
-🧱 Repositórios Complementares
-🔙 Backend: AnonyQuest (FastAPI)
 
-🛢️ Banco de Dados: MySQL-Projetodevops
+**Acesse a máquina virtual:**
 
-🖥️ Ambiente com Vagrant: Trabalho-final---Devops
+ssh vagrant@<IP_DA_VM>
 
-⚙️ Tecnologias Utilizadas
-React (Vite)
+**Dentro da VM, execute o port-forward do serviço do frontend:**
 
-JavaScript
+kubectl port-forward svc/frontend-front-projetofevops --address 0.0.0.0 8000:80
 
-Node.js
+**No seu navegador (fora da VM), acesse:**
 
-HTML & CSS
+http://<IP_DA_VM>:8000
 
-Vagrant (provisionamento da VM)
 
-📌 Status do Projeto
-✅ Frontend desenvolvido
-✅ Provisionamento com Vagrant funcional
-❌ Integração frontend ↔ backend ↔ banco não realizada
-
-👨‍💻 Autores
+## 👨‍💻 Autores
 @victtows – Frontend & Vagrant
 
 @FabioPYAug – Backend (FastAPI)

@@ -10,10 +10,13 @@ Este repositório contém o frontend do projeto AnonyQuest, desenvolvido para a 
 
 ## Clone o repositório
 
+```bash
 git clone https://github.com/victtows/Front-Projetodevops.git
+```
 
+```bash
 cd Front-Projetodevops
-
+```
 
 ## 🖥️ Ambiente de Desenvolvimento com Vagrant
 
@@ -25,11 +28,13 @@ cd Front-Projetodevops
 
 **Para utilizar:**
 
+```bash
 git clone https://github.com/victtows/Trabalho-final---Devops.git
+```
 
 ## Acessar pelo navegador
 
-**Importante:** faça os passos anteriores do repositorio acima se nao foi feito, ate chegar nessa parte 
+**⚠️Importante:** faça os passos anteriores do repositorio acima se nao foi feito, ate chegar nessa parte 
 
 **Suba a máquina virtual (se não tiver feito esse passo antes):**
 ```bash 

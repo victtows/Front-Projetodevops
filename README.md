@@ -27,27 +27,36 @@ cd Front-Projetodevops
 
 git clone https://github.com/victtows/Trabalho-final---Devops.git
 
-**Suba a máquina virtual:**
-
+## Acessar 
+**Suba a máquina virtual (se não tiver feito esse passo antes):**
+```bash 
 vagrant up
+```
 
 **Acesse a máquina virtual:**
 
+```bash
 ssh vagrant@<IP_DA_VM>
+```
 
 **Dentro da VM, execute o port-forward do serviço do frontend:**
 
-kubectl port-forward svc/frontend-front-projetofevops --address 0.0.0.0 8000:80
+```bash
+kubectl port-forward svc/frontend-front-projetofevops --address 0.0.0.0 8000:80 --frontend
+kubectl port-forward svc/frontend-front-projetofevops --address 0.0.0.0 8181:80 --backend
+kubectl port-forward svc/frontend-front-projetofevops --address 0.0.0.0 8002:80 --banco mysql
+```
 
 **No seu navegador (fora da VM), acesse:**
 
+```bash
 http://<IP_DA_VM>:8000
+```
 
 
 ## 👨‍💻 Autores
+
 @victtows – Frontend & Vagrant
-
 @FabioPYAug – Backend (FastAPI)
-
 @Otaviopax – Banco de Dados (MySQL)
 
